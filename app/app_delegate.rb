@@ -11,9 +11,8 @@ class AppDelegate
     @window.makeKeyAndVisible
 
     ## Tests
-    mw = NewMagickWand() # Will work with Pod, not with vendoring
-    p "mw is a #{mw.class}"
-    MagickSetImageFormat(mw, "gif") #
+    mw = NewMagickWand()
+    MagickSetImageFormat(mw, "gif")
 
     true
   end
