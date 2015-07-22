@@ -1,0 +1,1033 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<struct name='JHUFF_TBL' type='{_JHUFF_TBL=&quot;bits&quot;[17C]&quot;huffval&quot;[256C]&quot;sent_table&quot;i}'>
+<field declared_type='UINT8*' name='bits' type='[17C]'/>
+<field declared_type='UINT8*' name='huffval' type='[256C]'/>
+<field declared_type='boolean' name='sent_table' type='i'/>
+</struct>
+<struct name='JQUANT_TBL' type='{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}'>
+<field declared_type='UINT16*' name='quantval' type='[64S]'/>
+<field declared_type='boolean' name='sent_table' type='i'/>
+</struct>
+<struct name='j_common_ptr' type='{jpeg_common_struct=&quot;err&quot;^{jpeg_error_mgr}&quot;mem&quot;^{jpeg_memory_mgr}&quot;progress&quot;^{jpeg_progress_mgr}&quot;client_data&quot;^v&quot;is_decompressor&quot;i&quot;global_state&quot;i}'>
+<field declared_type='struct jpeg_error_mgr*' name='err' type='^{jpeg_error_mgr=^?^?^?^?^?i(?=[8i][80c])il^*i^*ii}'/>
+<field declared_type='struct jpeg_memory_mgr*' name='mem' type='^{jpeg_memory_mgr=^?^?^?^?^?^?^?^?^?^?^?ll}'/>
+<field declared_type='struct jpeg_progress_mgr*' name='progress' type='^{jpeg_progress_mgr=^?llii}'/>
+<field declared_type='void*' name='client_data' type='^v'/>
+<field declared_type='boolean' name='is_decompressor' type='i'/>
+<field declared_type='int' name='global_state' type='i'/>
+</struct>
+<struct name='j_compress_ptr' type='{jpeg_compress_struct=&quot;err&quot;^{jpeg_error_mgr}&quot;mem&quot;^{jpeg_memory_mgr}&quot;progress&quot;^{jpeg_progress_mgr}&quot;client_data&quot;^v&quot;is_decompressor&quot;i&quot;global_state&quot;i&quot;dest&quot;^{jpeg_destination_mgr}&quot;image_width&quot;I&quot;image_height&quot;I&quot;input_components&quot;i&quot;in_color_space&quot;i&quot;input_gamma&quot;d&quot;scale_num&quot;I&quot;scale_denom&quot;I&quot;jpeg_width&quot;I&quot;jpeg_height&quot;I&quot;data_precision&quot;i&quot;num_components&quot;i&quot;jpeg_color_space&quot;i&quot;comp_info&quot;^{_jpeg_component_info=&quot;component_id&quot;i&quot;component_index&quot;i&quot;h_samp_factor&quot;i&quot;v_samp_factor&quot;i&quot;quant_tbl_no&quot;i&quot;dc_tbl_no&quot;i&quot;ac_tbl_no&quot;i&quot;width_in_blocks&quot;I&quot;height_in_blocks&quot;I&quot;DCT_h_scaled_size&quot;i&quot;DCT_v_scaled_size&quot;i&quot;downsampled_width&quot;I&quot;downsampled_height&quot;I&quot;component_needed&quot;i&quot;MCU_width&quot;i&quot;MCU_height&quot;i&quot;MCU_blocks&quot;i&quot;MCU_sample_width&quot;i&quot;last_col_width&quot;i&quot;last_row_height&quot;i&quot;quant_table&quot;^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}&quot;dct_table&quot;^v}&quot;quant_tbl_ptrs&quot;[4^{?}]&quot;q_scale_factor&quot;[4i]&quot;dc_huff_tbl_ptrs&quot;[4^{?}]&quot;ac_huff_tbl_ptrs&quot;[4^{?}]&quot;arith_dc_L&quot;[16C]&quot;arith_dc_U&quot;[16C]&quot;arith_ac_K&quot;[16C]&quot;num_scans&quot;i&quot;scan_info&quot;^{_jpeg_scan_info=&quot;comps_in_scan&quot;i&quot;component_index&quot;[4i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i}&quot;raw_data_in&quot;i&quot;arith_code&quot;i&quot;optimize_coding&quot;i&quot;CCIR601_sampling&quot;i&quot;do_fancy_downsampling&quot;i&quot;smoothing_factor&quot;i&quot;dct_method&quot;i&quot;restart_interval&quot;I&quot;restart_in_rows&quot;i&quot;write_JFIF_header&quot;i&quot;JFIF_major_version&quot;C&quot;JFIF_minor_version&quot;C&quot;density_unit&quot;C&quot;X_density&quot;S&quot;Y_density&quot;S&quot;write_Adobe_marker&quot;i&quot;color_transform&quot;i&quot;next_scanline&quot;I&quot;progressive_mode&quot;i&quot;max_h_samp_factor&quot;i&quot;max_v_samp_factor&quot;i&quot;min_DCT_h_scaled_size&quot;i&quot;min_DCT_v_scaled_size&quot;i&quot;total_iMCU_rows&quot;I&quot;comps_in_scan&quot;i&quot;cur_comp_info&quot;[4^{?}]&quot;MCUs_per_row&quot;I&quot;MCU_rows_in_scan&quot;I&quot;blocks_in_MCU&quot;i&quot;MCU_membership&quot;[10i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i&quot;block_size&quot;i&quot;natural_order&quot;^i&quot;lim_Se&quot;i&quot;master&quot;^{jpeg_comp_master}&quot;main&quot;^{jpeg_c_main_controller}&quot;prep&quot;^{jpeg_c_prep_controller}&quot;coef&quot;^{jpeg_c_coef_controller}&quot;marker&quot;^{jpeg_marker_writer}&quot;cconvert&quot;^{jpeg_color_converter}&quot;downsample&quot;^{jpeg_downsampler}&quot;fdct&quot;^{jpeg_forward_dct}&quot;entropy&quot;^{jpeg_entropy_encoder}&quot;script_space&quot;^{_jpeg_scan_info=&quot;comps_in_scan&quot;i&quot;component_index&quot;[4i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i}&quot;script_space_size&quot;i}'>
+<field declared_type='struct jpeg_error_mgr*' name='err' type='^{jpeg_error_mgr=^?^?^?^?^?i(?=[8i][80c])il^*i^*ii}'/>
+<field declared_type='struct jpeg_memory_mgr*' name='mem' type='^{jpeg_memory_mgr=^?^?^?^?^?^?^?^?^?^?^?ll}'/>
+<field declared_type='struct jpeg_progress_mgr*' name='progress' type='^{jpeg_progress_mgr=^?llii}'/>
+<field declared_type='void*' name='client_data' type='^v'/>
+<field declared_type='boolean' name='is_decompressor' type='i'/>
+<field declared_type='int' name='global_state' type='i'/>
+<field declared_type='struct jpeg_destination_mgr*' name='dest' type='^{jpeg_destination_mgr=*I^?^?^?}'/>
+<field declared_type='JDIMENSION' name='image_width' type='I'/>
+<field declared_type='JDIMENSION' name='image_height' type='I'/>
+<field declared_type='int' name='input_components' type='i'/>
+<field declared_type='J_COLOR_SPACE' name='in_color_space' type='i'/>
+<field declared_type='double' name='input_gamma' type='d'/>
+<field declared_type='unsigned int' name='scale_num' type='I'/>
+<field declared_type='unsigned int' name='scale_denom' type='I'/>
+<field declared_type='JDIMENSION' name='jpeg_width' type='I'/>
+<field declared_type='JDIMENSION' name='jpeg_height' type='I'/>
+<field declared_type='int' name='data_precision' type='i'/>
+<field declared_type='int' name='num_components' type='i'/>
+<field declared_type='J_COLOR_SPACE' name='jpeg_color_space' type='i'/>
+<field declared_type='jpeg_component_info*' name='comp_info' type='^{_jpeg_component_info=&quot;component_id&quot;i&quot;component_index&quot;i&quot;h_samp_factor&quot;i&quot;v_samp_factor&quot;i&quot;quant_tbl_no&quot;i&quot;dc_tbl_no&quot;i&quot;ac_tbl_no&quot;i&quot;width_in_blocks&quot;I&quot;height_in_blocks&quot;I&quot;DCT_h_scaled_size&quot;i&quot;DCT_v_scaled_size&quot;i&quot;downsampled_width&quot;I&quot;downsampled_height&quot;I&quot;component_needed&quot;i&quot;MCU_width&quot;i&quot;MCU_height&quot;i&quot;MCU_blocks&quot;i&quot;MCU_sample_width&quot;i&quot;last_col_width&quot;i&quot;last_row_height&quot;i&quot;quant_table&quot;^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}&quot;dct_table&quot;^v}'/>
+<field declared_type='JQUANT_TBL**' name='quant_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='int*' name='q_scale_factor' type='[4i]'/>
+<field declared_type='JHUFF_TBL**' name='dc_huff_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='JHUFF_TBL**' name='ac_huff_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='UINT8*' name='arith_dc_L' type='[16C]'/>
+<field declared_type='UINT8*' name='arith_dc_U' type='[16C]'/>
+<field declared_type='UINT8*' name='arith_ac_K' type='[16C]'/>
+<field declared_type='int' name='num_scans' type='i'/>
+<field const='true' declared_type='jpeg_scan_info*' name='scan_info' type='^{_jpeg_scan_info=&quot;comps_in_scan&quot;i&quot;component_index&quot;[4i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i}'/>
+<field declared_type='boolean' name='raw_data_in' type='i'/>
+<field declared_type='boolean' name='arith_code' type='i'/>
+<field declared_type='boolean' name='optimize_coding' type='i'/>
+<field declared_type='boolean' name='CCIR601_sampling' type='i'/>
+<field declared_type='boolean' name='do_fancy_downsampling' type='i'/>
+<field declared_type='int' name='smoothing_factor' type='i'/>
+<field declared_type='J_DCT_METHOD' name='dct_method' type='i'/>
+<field declared_type='unsigned int' name='restart_interval' type='I'/>
+<field declared_type='int' name='restart_in_rows' type='i'/>
+<field declared_type='boolean' name='write_JFIF_header' type='i'/>
+<field declared_type='UINT8' name='JFIF_major_version' type='C'/>
+<field declared_type='UINT8' name='JFIF_minor_version' type='C'/>
+<field declared_type='UINT8' name='density_unit' type='C'/>
+<field declared_type='UINT16' name='X_density' type='S'/>
+<field declared_type='UINT16' name='Y_density' type='S'/>
+<field declared_type='boolean' name='write_Adobe_marker' type='i'/>
+<field declared_type='J_COLOR_TRANSFORM' name='color_transform' type='i'/>
+<field declared_type='JDIMENSION' name='next_scanline' type='I'/>
+<field declared_type='boolean' name='progressive_mode' type='i'/>
+<field declared_type='int' name='max_h_samp_factor' type='i'/>
+<field declared_type='int' name='max_v_samp_factor' type='i'/>
+<field declared_type='int' name='min_DCT_h_scaled_size' type='i'/>
+<field declared_type='int' name='min_DCT_v_scaled_size' type='i'/>
+<field declared_type='JDIMENSION' name='total_iMCU_rows' type='I'/>
+<field declared_type='int' name='comps_in_scan' type='i'/>
+<field declared_type='jpeg_component_info**' name='cur_comp_info' type='[4^{?}]'/>
+<field declared_type='JDIMENSION' name='MCUs_per_row' type='I'/>
+<field declared_type='JDIMENSION' name='MCU_rows_in_scan' type='I'/>
+<field declared_type='int' name='blocks_in_MCU' type='i'/>
+<field declared_type='int*' name='MCU_membership' type='[10i]'/>
+<field declared_type='int' name='Ss' type='i'/>
+<field declared_type='int' name='Se' type='i'/>
+<field declared_type='int' name='Ah' type='i'/>
+<field declared_type='int' name='Al' type='i'/>
+<field declared_type='int' name='block_size' type='i'/>
+<field const='true' declared_type='int*' name='natural_order' type='^i'/>
+<field declared_type='int' name='lim_Se' type='i'/>
+<field declared_type='struct jpeg_comp_master*' name='master' type='^{jpeg_comp_master=}'/>
+<field declared_type='struct jpeg_c_main_controller*' name='main' type='^{jpeg_c_main_controller=}'/>
+<field declared_type='struct jpeg_c_prep_controller*' name='prep' type='^{jpeg_c_prep_controller=}'/>
+<field declared_type='struct jpeg_c_coef_controller*' name='coef' type='^{jpeg_c_coef_controller=}'/>
+<field declared_type='struct jpeg_marker_writer*' name='marker' type='^{jpeg_marker_writer=}'/>
+<field declared_type='struct jpeg_color_converter*' name='cconvert' type='^{jpeg_color_converter=}'/>
+<field declared_type='struct jpeg_downsampler*' name='downsample' type='^{jpeg_downsampler=}'/>
+<field declared_type='struct jpeg_forward_dct*' name='fdct' type='^{jpeg_forward_dct=}'/>
+<field declared_type='struct jpeg_entropy_encoder*' name='entropy' type='^{jpeg_entropy_encoder=}'/>
+<field declared_type='jpeg_scan_info*' name='script_space' type='^{_jpeg_scan_info=&quot;comps_in_scan&quot;i&quot;component_index&quot;[4i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i}'/>
+<field declared_type='int' name='script_space_size' type='i'/>
+</struct>
+<struct name='j_decompress_ptr' type='{jpeg_decompress_struct=&quot;err&quot;^{jpeg_error_mgr}&quot;mem&quot;^{jpeg_memory_mgr}&quot;progress&quot;^{jpeg_progress_mgr}&quot;client_data&quot;^v&quot;is_decompressor&quot;i&quot;global_state&quot;i&quot;src&quot;^{jpeg_source_mgr}&quot;image_width&quot;I&quot;image_height&quot;I&quot;num_components&quot;i&quot;jpeg_color_space&quot;i&quot;out_color_space&quot;i&quot;scale_num&quot;I&quot;scale_denom&quot;I&quot;output_gamma&quot;d&quot;buffered_image&quot;i&quot;raw_data_out&quot;i&quot;dct_method&quot;i&quot;do_fancy_upsampling&quot;i&quot;do_block_smoothing&quot;i&quot;quantize_colors&quot;i&quot;dither_mode&quot;i&quot;two_pass_quantize&quot;i&quot;desired_number_of_colors&quot;i&quot;enable_1pass_quant&quot;i&quot;enable_external_quant&quot;i&quot;enable_2pass_quant&quot;i&quot;output_width&quot;I&quot;output_height&quot;I&quot;out_color_components&quot;i&quot;output_components&quot;i&quot;rec_outbuf_height&quot;i&quot;actual_number_of_colors&quot;i&quot;colormap&quot;^*&quot;output_scanline&quot;I&quot;input_scan_number&quot;i&quot;input_iMCU_row&quot;I&quot;output_scan_number&quot;i&quot;output_iMCU_row&quot;I&quot;coef_bits&quot;^[64i]&quot;quant_tbl_ptrs&quot;[4^{?}]&quot;dc_huff_tbl_ptrs&quot;[4^{?}]&quot;ac_huff_tbl_ptrs&quot;[4^{?}]&quot;data_precision&quot;i&quot;comp_info&quot;^{_jpeg_component_info=&quot;component_id&quot;i&quot;component_index&quot;i&quot;h_samp_factor&quot;i&quot;v_samp_factor&quot;i&quot;quant_tbl_no&quot;i&quot;dc_tbl_no&quot;i&quot;ac_tbl_no&quot;i&quot;width_in_blocks&quot;I&quot;height_in_blocks&quot;I&quot;DCT_h_scaled_size&quot;i&quot;DCT_v_scaled_size&quot;i&quot;downsampled_width&quot;I&quot;downsampled_height&quot;I&quot;component_needed&quot;i&quot;MCU_width&quot;i&quot;MCU_height&quot;i&quot;MCU_blocks&quot;i&quot;MCU_sample_width&quot;i&quot;last_col_width&quot;i&quot;last_row_height&quot;i&quot;quant_table&quot;^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}&quot;dct_table&quot;^v}&quot;is_baseline&quot;i&quot;progressive_mode&quot;i&quot;arith_code&quot;i&quot;arith_dc_L&quot;[16C]&quot;arith_dc_U&quot;[16C]&quot;arith_ac_K&quot;[16C]&quot;restart_interval&quot;I&quot;saw_JFIF_marker&quot;i&quot;JFIF_major_version&quot;C&quot;JFIF_minor_version&quot;C&quot;density_unit&quot;C&quot;X_density&quot;S&quot;Y_density&quot;S&quot;saw_Adobe_marker&quot;i&quot;Adobe_transform&quot;C&quot;color_transform&quot;i&quot;CCIR601_sampling&quot;i&quot;marker_list&quot;^{jpeg_marker_struct=&quot;next&quot;^{jpeg_marker_struct}&quot;marker&quot;C&quot;original_length&quot;I&quot;data_length&quot;I&quot;data&quot;*}&quot;max_h_samp_factor&quot;i&quot;max_v_samp_factor&quot;i&quot;min_DCT_h_scaled_size&quot;i&quot;min_DCT_v_scaled_size&quot;i&quot;total_iMCU_rows&quot;I&quot;sample_range_limit&quot;*&quot;comps_in_scan&quot;i&quot;cur_comp_info&quot;[4^{?}]&quot;MCUs_per_row&quot;I&quot;MCU_rows_in_scan&quot;I&quot;blocks_in_MCU&quot;i&quot;MCU_membership&quot;[10i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i&quot;block_size&quot;i&quot;natural_order&quot;^i&quot;lim_Se&quot;i&quot;unread_marker&quot;i&quot;master&quot;^{jpeg_decomp_master}&quot;main&quot;^{jpeg_d_main_controller}&quot;coef&quot;^{jpeg_d_coef_controller}&quot;post&quot;^{jpeg_d_post_controller}&quot;inputctl&quot;^{jpeg_input_controller}&quot;marker&quot;^{jpeg_marker_reader}&quot;entropy&quot;^{jpeg_entropy_decoder}&quot;idct&quot;^{jpeg_inverse_dct}&quot;upsample&quot;^{jpeg_upsampler}&quot;cconvert&quot;^{jpeg_color_deconverter}&quot;cquantize&quot;^{jpeg_color_quantizer}}'>
+<field declared_type='struct jpeg_error_mgr*' name='err' type='^{jpeg_error_mgr=^?^?^?^?^?i(?=[8i][80c])il^*i^*ii}'/>
+<field declared_type='struct jpeg_memory_mgr*' name='mem' type='^{jpeg_memory_mgr=^?^?^?^?^?^?^?^?^?^?^?ll}'/>
+<field declared_type='struct jpeg_progress_mgr*' name='progress' type='^{jpeg_progress_mgr=^?llii}'/>
+<field declared_type='void*' name='client_data' type='^v'/>
+<field declared_type='boolean' name='is_decompressor' type='i'/>
+<field declared_type='int' name='global_state' type='i'/>
+<field declared_type='struct jpeg_source_mgr*' name='src' type='^{jpeg_source_mgr=*I^?^?^?^?^?}'/>
+<field declared_type='JDIMENSION' name='image_width' type='I'/>
+<field declared_type='JDIMENSION' name='image_height' type='I'/>
+<field declared_type='int' name='num_components' type='i'/>
+<field declared_type='J_COLOR_SPACE' name='jpeg_color_space' type='i'/>
+<field declared_type='J_COLOR_SPACE' name='out_color_space' type='i'/>
+<field declared_type='unsigned int' name='scale_num' type='I'/>
+<field declared_type='unsigned int' name='scale_denom' type='I'/>
+<field declared_type='double' name='output_gamma' type='d'/>
+<field declared_type='boolean' name='buffered_image' type='i'/>
+<field declared_type='boolean' name='raw_data_out' type='i'/>
+<field declared_type='J_DCT_METHOD' name='dct_method' type='i'/>
+<field declared_type='boolean' name='do_fancy_upsampling' type='i'/>
+<field declared_type='boolean' name='do_block_smoothing' type='i'/>
+<field declared_type='boolean' name='quantize_colors' type='i'/>
+<field declared_type='J_DITHER_MODE' name='dither_mode' type='i'/>
+<field declared_type='boolean' name='two_pass_quantize' type='i'/>
+<field declared_type='int' name='desired_number_of_colors' type='i'/>
+<field declared_type='boolean' name='enable_1pass_quant' type='i'/>
+<field declared_type='boolean' name='enable_external_quant' type='i'/>
+<field declared_type='boolean' name='enable_2pass_quant' type='i'/>
+<field declared_type='JDIMENSION' name='output_width' type='I'/>
+<field declared_type='JDIMENSION' name='output_height' type='I'/>
+<field declared_type='int' name='out_color_components' type='i'/>
+<field declared_type='int' name='output_components' type='i'/>
+<field declared_type='int' name='rec_outbuf_height' type='i'/>
+<field declared_type='int' name='actual_number_of_colors' type='i'/>
+<field declared_type='JSAMPARRAY' name='colormap' type='^*'/>
+<field declared_type='JDIMENSION' name='output_scanline' type='I'/>
+<field declared_type='int' name='input_scan_number' type='i'/>
+<field declared_type='JDIMENSION' name='input_iMCU_row' type='I'/>
+<field declared_type='int' name='output_scan_number' type='i'/>
+<field declared_type='JDIMENSION' name='output_iMCU_row' type='I'/>
+<field declared_type='int (*)*' name='coef_bits' type='^[64i]'/>
+<field declared_type='JQUANT_TBL**' name='quant_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='JHUFF_TBL**' name='dc_huff_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='JHUFF_TBL**' name='ac_huff_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='int' name='data_precision' type='i'/>
+<field declared_type='jpeg_component_info*' name='comp_info' type='^{_jpeg_component_info=&quot;component_id&quot;i&quot;component_index&quot;i&quot;h_samp_factor&quot;i&quot;v_samp_factor&quot;i&quot;quant_tbl_no&quot;i&quot;dc_tbl_no&quot;i&quot;ac_tbl_no&quot;i&quot;width_in_blocks&quot;I&quot;height_in_blocks&quot;I&quot;DCT_h_scaled_size&quot;i&quot;DCT_v_scaled_size&quot;i&quot;downsampled_width&quot;I&quot;downsampled_height&quot;I&quot;component_needed&quot;i&quot;MCU_width&quot;i&quot;MCU_height&quot;i&quot;MCU_blocks&quot;i&quot;MCU_sample_width&quot;i&quot;last_col_width&quot;i&quot;last_row_height&quot;i&quot;quant_table&quot;^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}&quot;dct_table&quot;^v}'/>
+<field declared_type='boolean' name='is_baseline' type='i'/>
+<field declared_type='boolean' name='progressive_mode' type='i'/>
+<field declared_type='boolean' name='arith_code' type='i'/>
+<field declared_type='UINT8*' name='arith_dc_L' type='[16C]'/>
+<field declared_type='UINT8*' name='arith_dc_U' type='[16C]'/>
+<field declared_type='UINT8*' name='arith_ac_K' type='[16C]'/>
+<field declared_type='unsigned int' name='restart_interval' type='I'/>
+<field declared_type='boolean' name='saw_JFIF_marker' type='i'/>
+<field declared_type='UINT8' name='JFIF_major_version' type='C'/>
+<field declared_type='UINT8' name='JFIF_minor_version' type='C'/>
+<field declared_type='UINT8' name='density_unit' type='C'/>
+<field declared_type='UINT16' name='X_density' type='S'/>
+<field declared_type='UINT16' name='Y_density' type='S'/>
+<field declared_type='boolean' name='saw_Adobe_marker' type='i'/>
+<field declared_type='UINT8' name='Adobe_transform' type='C'/>
+<field declared_type='J_COLOR_TRANSFORM' name='color_transform' type='i'/>
+<field declared_type='boolean' name='CCIR601_sampling' type='i'/>
+<field declared_type='jpeg_saved_marker_ptr' name='marker_list' type='^{jpeg_marker_struct=&quot;next&quot;^{jpeg_marker_struct}&quot;marker&quot;C&quot;original_length&quot;I&quot;data_length&quot;I&quot;data&quot;*}'/>
+<field declared_type='int' name='max_h_samp_factor' type='i'/>
+<field declared_type='int' name='max_v_samp_factor' type='i'/>
+<field declared_type='int' name='min_DCT_h_scaled_size' type='i'/>
+<field declared_type='int' name='min_DCT_v_scaled_size' type='i'/>
+<field declared_type='JDIMENSION' name='total_iMCU_rows' type='I'/>
+<field declared_type='JSAMPLE*' name='sample_range_limit' type='*'/>
+<field declared_type='int' name='comps_in_scan' type='i'/>
+<field declared_type='jpeg_component_info**' name='cur_comp_info' type='[4^{?}]'/>
+<field declared_type='JDIMENSION' name='MCUs_per_row' type='I'/>
+<field declared_type='JDIMENSION' name='MCU_rows_in_scan' type='I'/>
+<field declared_type='int' name='blocks_in_MCU' type='i'/>
+<field declared_type='int*' name='MCU_membership' type='[10i]'/>
+<field declared_type='int' name='Ss' type='i'/>
+<field declared_type='int' name='Se' type='i'/>
+<field declared_type='int' name='Ah' type='i'/>
+<field declared_type='int' name='Al' type='i'/>
+<field declared_type='int' name='block_size' type='i'/>
+<field const='true' declared_type='int*' name='natural_order' type='^i'/>
+<field declared_type='int' name='lim_Se' type='i'/>
+<field declared_type='int' name='unread_marker' type='i'/>
+<field declared_type='struct jpeg_decomp_master*' name='master' type='^{jpeg_decomp_master=}'/>
+<field declared_type='struct jpeg_d_main_controller*' name='main' type='^{jpeg_d_main_controller=}'/>
+<field declared_type='struct jpeg_d_coef_controller*' name='coef' type='^{jpeg_d_coef_controller=}'/>
+<field declared_type='struct jpeg_d_post_controller*' name='post' type='^{jpeg_d_post_controller=}'/>
+<field declared_type='struct jpeg_input_controller*' name='inputctl' type='^{jpeg_input_controller=}'/>
+<field declared_type='struct jpeg_marker_reader*' name='marker' type='^{jpeg_marker_reader=}'/>
+<field declared_type='struct jpeg_entropy_decoder*' name='entropy' type='^{jpeg_entropy_decoder=}'/>
+<field declared_type='struct jpeg_inverse_dct*' name='idct' type='^{jpeg_inverse_dct=}'/>
+<field declared_type='struct jpeg_upsampler*' name='upsample' type='^{jpeg_upsampler=}'/>
+<field declared_type='struct jpeg_color_deconverter*' name='cconvert' type='^{jpeg_color_deconverter=}'/>
+<field declared_type='struct jpeg_color_quantizer*' name='cquantize' type='^{jpeg_color_quantizer=}'/>
+</struct>
+<struct name='jpeg_common_struct' type='{jpeg_common_struct=&quot;err&quot;^{jpeg_error_mgr}&quot;mem&quot;^{jpeg_memory_mgr}&quot;progress&quot;^{jpeg_progress_mgr}&quot;client_data&quot;^v&quot;is_decompressor&quot;i&quot;global_state&quot;i}'>
+<field declared_type='struct jpeg_error_mgr*' name='err' type='^{jpeg_error_mgr=^?^?^?^?^?i(?=[8i][80c])il^*i^*ii}'/>
+<field declared_type='struct jpeg_memory_mgr*' name='mem' type='^{jpeg_memory_mgr=^?^?^?^?^?^?^?^?^?^?^?ll}'/>
+<field declared_type='struct jpeg_progress_mgr*' name='progress' type='^{jpeg_progress_mgr=^?llii}'/>
+<field declared_type='void*' name='client_data' type='^v'/>
+<field declared_type='boolean' name='is_decompressor' type='i'/>
+<field declared_type='int' name='global_state' type='i'/>
+</struct>
+<struct name='jpeg_component_info' type='{_jpeg_component_info=&quot;component_id&quot;i&quot;component_index&quot;i&quot;h_samp_factor&quot;i&quot;v_samp_factor&quot;i&quot;quant_tbl_no&quot;i&quot;dc_tbl_no&quot;i&quot;ac_tbl_no&quot;i&quot;width_in_blocks&quot;I&quot;height_in_blocks&quot;I&quot;DCT_h_scaled_size&quot;i&quot;DCT_v_scaled_size&quot;i&quot;downsampled_width&quot;I&quot;downsampled_height&quot;I&quot;component_needed&quot;i&quot;MCU_width&quot;i&quot;MCU_height&quot;i&quot;MCU_blocks&quot;i&quot;MCU_sample_width&quot;i&quot;last_col_width&quot;i&quot;last_row_height&quot;i&quot;quant_table&quot;^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}&quot;dct_table&quot;^v}'>
+<field declared_type='int' name='component_id' type='i'/>
+<field declared_type='int' name='component_index' type='i'/>
+<field declared_type='int' name='h_samp_factor' type='i'/>
+<field declared_type='int' name='v_samp_factor' type='i'/>
+<field declared_type='int' name='quant_tbl_no' type='i'/>
+<field declared_type='int' name='dc_tbl_no' type='i'/>
+<field declared_type='int' name='ac_tbl_no' type='i'/>
+<field declared_type='JDIMENSION' name='width_in_blocks' type='I'/>
+<field declared_type='JDIMENSION' name='height_in_blocks' type='I'/>
+<field declared_type='int' name='DCT_h_scaled_size' type='i'/>
+<field declared_type='int' name='DCT_v_scaled_size' type='i'/>
+<field declared_type='JDIMENSION' name='downsampled_width' type='I'/>
+<field declared_type='JDIMENSION' name='downsampled_height' type='I'/>
+<field declared_type='boolean' name='component_needed' type='i'/>
+<field declared_type='int' name='MCU_width' type='i'/>
+<field declared_type='int' name='MCU_height' type='i'/>
+<field declared_type='int' name='MCU_blocks' type='i'/>
+<field declared_type='int' name='MCU_sample_width' type='i'/>
+<field declared_type='int' name='last_col_width' type='i'/>
+<field declared_type='int' name='last_row_height' type='i'/>
+<field declared_type='JQUANT_TBL*' name='quant_table' type='^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}'/>
+<field declared_type='void*' name='dct_table' type='^v'/>
+</struct>
+<struct name='jpeg_compress_struct' type='{jpeg_compress_struct=&quot;err&quot;^{jpeg_error_mgr}&quot;mem&quot;^{jpeg_memory_mgr}&quot;progress&quot;^{jpeg_progress_mgr}&quot;client_data&quot;^v&quot;is_decompressor&quot;i&quot;global_state&quot;i&quot;dest&quot;^{jpeg_destination_mgr}&quot;image_width&quot;I&quot;image_height&quot;I&quot;input_components&quot;i&quot;in_color_space&quot;i&quot;input_gamma&quot;d&quot;scale_num&quot;I&quot;scale_denom&quot;I&quot;jpeg_width&quot;I&quot;jpeg_height&quot;I&quot;data_precision&quot;i&quot;num_components&quot;i&quot;jpeg_color_space&quot;i&quot;comp_info&quot;^{_jpeg_component_info=&quot;component_id&quot;i&quot;component_index&quot;i&quot;h_samp_factor&quot;i&quot;v_samp_factor&quot;i&quot;quant_tbl_no&quot;i&quot;dc_tbl_no&quot;i&quot;ac_tbl_no&quot;i&quot;width_in_blocks&quot;I&quot;height_in_blocks&quot;I&quot;DCT_h_scaled_size&quot;i&quot;DCT_v_scaled_size&quot;i&quot;downsampled_width&quot;I&quot;downsampled_height&quot;I&quot;component_needed&quot;i&quot;MCU_width&quot;i&quot;MCU_height&quot;i&quot;MCU_blocks&quot;i&quot;MCU_sample_width&quot;i&quot;last_col_width&quot;i&quot;last_row_height&quot;i&quot;quant_table&quot;^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}&quot;dct_table&quot;^v}&quot;quant_tbl_ptrs&quot;[4^{?}]&quot;q_scale_factor&quot;[4i]&quot;dc_huff_tbl_ptrs&quot;[4^{?}]&quot;ac_huff_tbl_ptrs&quot;[4^{?}]&quot;arith_dc_L&quot;[16C]&quot;arith_dc_U&quot;[16C]&quot;arith_ac_K&quot;[16C]&quot;num_scans&quot;i&quot;scan_info&quot;^{_jpeg_scan_info=&quot;comps_in_scan&quot;i&quot;component_index&quot;[4i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i}&quot;raw_data_in&quot;i&quot;arith_code&quot;i&quot;optimize_coding&quot;i&quot;CCIR601_sampling&quot;i&quot;do_fancy_downsampling&quot;i&quot;smoothing_factor&quot;i&quot;dct_method&quot;i&quot;restart_interval&quot;I&quot;restart_in_rows&quot;i&quot;write_JFIF_header&quot;i&quot;JFIF_major_version&quot;C&quot;JFIF_minor_version&quot;C&quot;density_unit&quot;C&quot;X_density&quot;S&quot;Y_density&quot;S&quot;write_Adobe_marker&quot;i&quot;color_transform&quot;i&quot;next_scanline&quot;I&quot;progressive_mode&quot;i&quot;max_h_samp_factor&quot;i&quot;max_v_samp_factor&quot;i&quot;min_DCT_h_scaled_size&quot;i&quot;min_DCT_v_scaled_size&quot;i&quot;total_iMCU_rows&quot;I&quot;comps_in_scan&quot;i&quot;cur_comp_info&quot;[4^{?}]&quot;MCUs_per_row&quot;I&quot;MCU_rows_in_scan&quot;I&quot;blocks_in_MCU&quot;i&quot;MCU_membership&quot;[10i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i&quot;block_size&quot;i&quot;natural_order&quot;^i&quot;lim_Se&quot;i&quot;master&quot;^{jpeg_comp_master}&quot;main&quot;^{jpeg_c_main_controller}&quot;prep&quot;^{jpeg_c_prep_controller}&quot;coef&quot;^{jpeg_c_coef_controller}&quot;marker&quot;^{jpeg_marker_writer}&quot;cconvert&quot;^{jpeg_color_converter}&quot;downsample&quot;^{jpeg_downsampler}&quot;fdct&quot;^{jpeg_forward_dct}&quot;entropy&quot;^{jpeg_entropy_encoder}&quot;script_space&quot;^{_jpeg_scan_info=&quot;comps_in_scan&quot;i&quot;component_index&quot;[4i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i}&quot;script_space_size&quot;i}'>
+<field declared_type='struct jpeg_error_mgr*' name='err' type='^{jpeg_error_mgr=^?^?^?^?^?i(?=[8i][80c])il^*i^*ii}'/>
+<field declared_type='struct jpeg_memory_mgr*' name='mem' type='^{jpeg_memory_mgr=^?^?^?^?^?^?^?^?^?^?^?ll}'/>
+<field declared_type='struct jpeg_progress_mgr*' name='progress' type='^{jpeg_progress_mgr=^?llii}'/>
+<field declared_type='void*' name='client_data' type='^v'/>
+<field declared_type='boolean' name='is_decompressor' type='i'/>
+<field declared_type='int' name='global_state' type='i'/>
+<field declared_type='struct jpeg_destination_mgr*' name='dest' type='^{jpeg_destination_mgr=*I^?^?^?}'/>
+<field declared_type='JDIMENSION' name='image_width' type='I'/>
+<field declared_type='JDIMENSION' name='image_height' type='I'/>
+<field declared_type='int' name='input_components' type='i'/>
+<field declared_type='J_COLOR_SPACE' name='in_color_space' type='i'/>
+<field declared_type='double' name='input_gamma' type='d'/>
+<field declared_type='unsigned int' name='scale_num' type='I'/>
+<field declared_type='unsigned int' name='scale_denom' type='I'/>
+<field declared_type='JDIMENSION' name='jpeg_width' type='I'/>
+<field declared_type='JDIMENSION' name='jpeg_height' type='I'/>
+<field declared_type='int' name='data_precision' type='i'/>
+<field declared_type='int' name='num_components' type='i'/>
+<field declared_type='J_COLOR_SPACE' name='jpeg_color_space' type='i'/>
+<field declared_type='jpeg_component_info*' name='comp_info' type='^{_jpeg_component_info=&quot;component_id&quot;i&quot;component_index&quot;i&quot;h_samp_factor&quot;i&quot;v_samp_factor&quot;i&quot;quant_tbl_no&quot;i&quot;dc_tbl_no&quot;i&quot;ac_tbl_no&quot;i&quot;width_in_blocks&quot;I&quot;height_in_blocks&quot;I&quot;DCT_h_scaled_size&quot;i&quot;DCT_v_scaled_size&quot;i&quot;downsampled_width&quot;I&quot;downsampled_height&quot;I&quot;component_needed&quot;i&quot;MCU_width&quot;i&quot;MCU_height&quot;i&quot;MCU_blocks&quot;i&quot;MCU_sample_width&quot;i&quot;last_col_width&quot;i&quot;last_row_height&quot;i&quot;quant_table&quot;^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}&quot;dct_table&quot;^v}'/>
+<field declared_type='JQUANT_TBL**' name='quant_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='int*' name='q_scale_factor' type='[4i]'/>
+<field declared_type='JHUFF_TBL**' name='dc_huff_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='JHUFF_TBL**' name='ac_huff_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='UINT8*' name='arith_dc_L' type='[16C]'/>
+<field declared_type='UINT8*' name='arith_dc_U' type='[16C]'/>
+<field declared_type='UINT8*' name='arith_ac_K' type='[16C]'/>
+<field declared_type='int' name='num_scans' type='i'/>
+<field const='true' declared_type='jpeg_scan_info*' name='scan_info' type='^{_jpeg_scan_info=&quot;comps_in_scan&quot;i&quot;component_index&quot;[4i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i}'/>
+<field declared_type='boolean' name='raw_data_in' type='i'/>
+<field declared_type='boolean' name='arith_code' type='i'/>
+<field declared_type='boolean' name='optimize_coding' type='i'/>
+<field declared_type='boolean' name='CCIR601_sampling' type='i'/>
+<field declared_type='boolean' name='do_fancy_downsampling' type='i'/>
+<field declared_type='int' name='smoothing_factor' type='i'/>
+<field declared_type='J_DCT_METHOD' name='dct_method' type='i'/>
+<field declared_type='unsigned int' name='restart_interval' type='I'/>
+<field declared_type='int' name='restart_in_rows' type='i'/>
+<field declared_type='boolean' name='write_JFIF_header' type='i'/>
+<field declared_type='UINT8' name='JFIF_major_version' type='C'/>
+<field declared_type='UINT8' name='JFIF_minor_version' type='C'/>
+<field declared_type='UINT8' name='density_unit' type='C'/>
+<field declared_type='UINT16' name='X_density' type='S'/>
+<field declared_type='UINT16' name='Y_density' type='S'/>
+<field declared_type='boolean' name='write_Adobe_marker' type='i'/>
+<field declared_type='J_COLOR_TRANSFORM' name='color_transform' type='i'/>
+<field declared_type='JDIMENSION' name='next_scanline' type='I'/>
+<field declared_type='boolean' name='progressive_mode' type='i'/>
+<field declared_type='int' name='max_h_samp_factor' type='i'/>
+<field declared_type='int' name='max_v_samp_factor' type='i'/>
+<field declared_type='int' name='min_DCT_h_scaled_size' type='i'/>
+<field declared_type='int' name='min_DCT_v_scaled_size' type='i'/>
+<field declared_type='JDIMENSION' name='total_iMCU_rows' type='I'/>
+<field declared_type='int' name='comps_in_scan' type='i'/>
+<field declared_type='jpeg_component_info**' name='cur_comp_info' type='[4^{?}]'/>
+<field declared_type='JDIMENSION' name='MCUs_per_row' type='I'/>
+<field declared_type='JDIMENSION' name='MCU_rows_in_scan' type='I'/>
+<field declared_type='int' name='blocks_in_MCU' type='i'/>
+<field declared_type='int*' name='MCU_membership' type='[10i]'/>
+<field declared_type='int' name='Ss' type='i'/>
+<field declared_type='int' name='Se' type='i'/>
+<field declared_type='int' name='Ah' type='i'/>
+<field declared_type='int' name='Al' type='i'/>
+<field declared_type='int' name='block_size' type='i'/>
+<field const='true' declared_type='int*' name='natural_order' type='^i'/>
+<field declared_type='int' name='lim_Se' type='i'/>
+<field declared_type='struct jpeg_comp_master*' name='master' type='^{jpeg_comp_master=}'/>
+<field declared_type='struct jpeg_c_main_controller*' name='main' type='^{jpeg_c_main_controller=}'/>
+<field declared_type='struct jpeg_c_prep_controller*' name='prep' type='^{jpeg_c_prep_controller=}'/>
+<field declared_type='struct jpeg_c_coef_controller*' name='coef' type='^{jpeg_c_coef_controller=}'/>
+<field declared_type='struct jpeg_marker_writer*' name='marker' type='^{jpeg_marker_writer=}'/>
+<field declared_type='struct jpeg_color_converter*' name='cconvert' type='^{jpeg_color_converter=}'/>
+<field declared_type='struct jpeg_downsampler*' name='downsample' type='^{jpeg_downsampler=}'/>
+<field declared_type='struct jpeg_forward_dct*' name='fdct' type='^{jpeg_forward_dct=}'/>
+<field declared_type='struct jpeg_entropy_encoder*' name='entropy' type='^{jpeg_entropy_encoder=}'/>
+<field declared_type='jpeg_scan_info*' name='script_space' type='^{_jpeg_scan_info=&quot;comps_in_scan&quot;i&quot;component_index&quot;[4i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i}'/>
+<field declared_type='int' name='script_space_size' type='i'/>
+</struct>
+<struct name='jpeg_decompress_struct' type='{jpeg_decompress_struct=&quot;err&quot;^{jpeg_error_mgr}&quot;mem&quot;^{jpeg_memory_mgr}&quot;progress&quot;^{jpeg_progress_mgr}&quot;client_data&quot;^v&quot;is_decompressor&quot;i&quot;global_state&quot;i&quot;src&quot;^{jpeg_source_mgr}&quot;image_width&quot;I&quot;image_height&quot;I&quot;num_components&quot;i&quot;jpeg_color_space&quot;i&quot;out_color_space&quot;i&quot;scale_num&quot;I&quot;scale_denom&quot;I&quot;output_gamma&quot;d&quot;buffered_image&quot;i&quot;raw_data_out&quot;i&quot;dct_method&quot;i&quot;do_fancy_upsampling&quot;i&quot;do_block_smoothing&quot;i&quot;quantize_colors&quot;i&quot;dither_mode&quot;i&quot;two_pass_quantize&quot;i&quot;desired_number_of_colors&quot;i&quot;enable_1pass_quant&quot;i&quot;enable_external_quant&quot;i&quot;enable_2pass_quant&quot;i&quot;output_width&quot;I&quot;output_height&quot;I&quot;out_color_components&quot;i&quot;output_components&quot;i&quot;rec_outbuf_height&quot;i&quot;actual_number_of_colors&quot;i&quot;colormap&quot;^*&quot;output_scanline&quot;I&quot;input_scan_number&quot;i&quot;input_iMCU_row&quot;I&quot;output_scan_number&quot;i&quot;output_iMCU_row&quot;I&quot;coef_bits&quot;^[64i]&quot;quant_tbl_ptrs&quot;[4^{?}]&quot;dc_huff_tbl_ptrs&quot;[4^{?}]&quot;ac_huff_tbl_ptrs&quot;[4^{?}]&quot;data_precision&quot;i&quot;comp_info&quot;^{_jpeg_component_info=&quot;component_id&quot;i&quot;component_index&quot;i&quot;h_samp_factor&quot;i&quot;v_samp_factor&quot;i&quot;quant_tbl_no&quot;i&quot;dc_tbl_no&quot;i&quot;ac_tbl_no&quot;i&quot;width_in_blocks&quot;I&quot;height_in_blocks&quot;I&quot;DCT_h_scaled_size&quot;i&quot;DCT_v_scaled_size&quot;i&quot;downsampled_width&quot;I&quot;downsampled_height&quot;I&quot;component_needed&quot;i&quot;MCU_width&quot;i&quot;MCU_height&quot;i&quot;MCU_blocks&quot;i&quot;MCU_sample_width&quot;i&quot;last_col_width&quot;i&quot;last_row_height&quot;i&quot;quant_table&quot;^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}&quot;dct_table&quot;^v}&quot;is_baseline&quot;i&quot;progressive_mode&quot;i&quot;arith_code&quot;i&quot;arith_dc_L&quot;[16C]&quot;arith_dc_U&quot;[16C]&quot;arith_ac_K&quot;[16C]&quot;restart_interval&quot;I&quot;saw_JFIF_marker&quot;i&quot;JFIF_major_version&quot;C&quot;JFIF_minor_version&quot;C&quot;density_unit&quot;C&quot;X_density&quot;S&quot;Y_density&quot;S&quot;saw_Adobe_marker&quot;i&quot;Adobe_transform&quot;C&quot;color_transform&quot;i&quot;CCIR601_sampling&quot;i&quot;marker_list&quot;^{jpeg_marker_struct=&quot;next&quot;^{jpeg_marker_struct}&quot;marker&quot;C&quot;original_length&quot;I&quot;data_length&quot;I&quot;data&quot;*}&quot;max_h_samp_factor&quot;i&quot;max_v_samp_factor&quot;i&quot;min_DCT_h_scaled_size&quot;i&quot;min_DCT_v_scaled_size&quot;i&quot;total_iMCU_rows&quot;I&quot;sample_range_limit&quot;*&quot;comps_in_scan&quot;i&quot;cur_comp_info&quot;[4^{?}]&quot;MCUs_per_row&quot;I&quot;MCU_rows_in_scan&quot;I&quot;blocks_in_MCU&quot;i&quot;MCU_membership&quot;[10i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i&quot;block_size&quot;i&quot;natural_order&quot;^i&quot;lim_Se&quot;i&quot;unread_marker&quot;i&quot;master&quot;^{jpeg_decomp_master}&quot;main&quot;^{jpeg_d_main_controller}&quot;coef&quot;^{jpeg_d_coef_controller}&quot;post&quot;^{jpeg_d_post_controller}&quot;inputctl&quot;^{jpeg_input_controller}&quot;marker&quot;^{jpeg_marker_reader}&quot;entropy&quot;^{jpeg_entropy_decoder}&quot;idct&quot;^{jpeg_inverse_dct}&quot;upsample&quot;^{jpeg_upsampler}&quot;cconvert&quot;^{jpeg_color_deconverter}&quot;cquantize&quot;^{jpeg_color_quantizer}}'>
+<field declared_type='struct jpeg_error_mgr*' name='err' type='^{jpeg_error_mgr=^?^?^?^?^?i(?=[8i][80c])il^*i^*ii}'/>
+<field declared_type='struct jpeg_memory_mgr*' name='mem' type='^{jpeg_memory_mgr=^?^?^?^?^?^?^?^?^?^?^?ll}'/>
+<field declared_type='struct jpeg_progress_mgr*' name='progress' type='^{jpeg_progress_mgr=^?llii}'/>
+<field declared_type='void*' name='client_data' type='^v'/>
+<field declared_type='boolean' name='is_decompressor' type='i'/>
+<field declared_type='int' name='global_state' type='i'/>
+<field declared_type='struct jpeg_source_mgr*' name='src' type='^{jpeg_source_mgr=*I^?^?^?^?^?}'/>
+<field declared_type='JDIMENSION' name='image_width' type='I'/>
+<field declared_type='JDIMENSION' name='image_height' type='I'/>
+<field declared_type='int' name='num_components' type='i'/>
+<field declared_type='J_COLOR_SPACE' name='jpeg_color_space' type='i'/>
+<field declared_type='J_COLOR_SPACE' name='out_color_space' type='i'/>
+<field declared_type='unsigned int' name='scale_num' type='I'/>
+<field declared_type='unsigned int' name='scale_denom' type='I'/>
+<field declared_type='double' name='output_gamma' type='d'/>
+<field declared_type='boolean' name='buffered_image' type='i'/>
+<field declared_type='boolean' name='raw_data_out' type='i'/>
+<field declared_type='J_DCT_METHOD' name='dct_method' type='i'/>
+<field declared_type='boolean' name='do_fancy_upsampling' type='i'/>
+<field declared_type='boolean' name='do_block_smoothing' type='i'/>
+<field declared_type='boolean' name='quantize_colors' type='i'/>
+<field declared_type='J_DITHER_MODE' name='dither_mode' type='i'/>
+<field declared_type='boolean' name='two_pass_quantize' type='i'/>
+<field declared_type='int' name='desired_number_of_colors' type='i'/>
+<field declared_type='boolean' name='enable_1pass_quant' type='i'/>
+<field declared_type='boolean' name='enable_external_quant' type='i'/>
+<field declared_type='boolean' name='enable_2pass_quant' type='i'/>
+<field declared_type='JDIMENSION' name='output_width' type='I'/>
+<field declared_type='JDIMENSION' name='output_height' type='I'/>
+<field declared_type='int' name='out_color_components' type='i'/>
+<field declared_type='int' name='output_components' type='i'/>
+<field declared_type='int' name='rec_outbuf_height' type='i'/>
+<field declared_type='int' name='actual_number_of_colors' type='i'/>
+<field declared_type='JSAMPARRAY' name='colormap' type='^*'/>
+<field declared_type='JDIMENSION' name='output_scanline' type='I'/>
+<field declared_type='int' name='input_scan_number' type='i'/>
+<field declared_type='JDIMENSION' name='input_iMCU_row' type='I'/>
+<field declared_type='int' name='output_scan_number' type='i'/>
+<field declared_type='JDIMENSION' name='output_iMCU_row' type='I'/>
+<field declared_type='int (*)*' name='coef_bits' type='^[64i]'/>
+<field declared_type='JQUANT_TBL**' name='quant_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='JHUFF_TBL**' name='dc_huff_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='JHUFF_TBL**' name='ac_huff_tbl_ptrs' type='[4^{?}]'/>
+<field declared_type='int' name='data_precision' type='i'/>
+<field declared_type='jpeg_component_info*' name='comp_info' type='^{_jpeg_component_info=&quot;component_id&quot;i&quot;component_index&quot;i&quot;h_samp_factor&quot;i&quot;v_samp_factor&quot;i&quot;quant_tbl_no&quot;i&quot;dc_tbl_no&quot;i&quot;ac_tbl_no&quot;i&quot;width_in_blocks&quot;I&quot;height_in_blocks&quot;I&quot;DCT_h_scaled_size&quot;i&quot;DCT_v_scaled_size&quot;i&quot;downsampled_width&quot;I&quot;downsampled_height&quot;I&quot;component_needed&quot;i&quot;MCU_width&quot;i&quot;MCU_height&quot;i&quot;MCU_blocks&quot;i&quot;MCU_sample_width&quot;i&quot;last_col_width&quot;i&quot;last_row_height&quot;i&quot;quant_table&quot;^{_JQUANT_TBL=&quot;quantval&quot;[64S]&quot;sent_table&quot;i}&quot;dct_table&quot;^v}'/>
+<field declared_type='boolean' name='is_baseline' type='i'/>
+<field declared_type='boolean' name='progressive_mode' type='i'/>
+<field declared_type='boolean' name='arith_code' type='i'/>
+<field declared_type='UINT8*' name='arith_dc_L' type='[16C]'/>
+<field declared_type='UINT8*' name='arith_dc_U' type='[16C]'/>
+<field declared_type='UINT8*' name='arith_ac_K' type='[16C]'/>
+<field declared_type='unsigned int' name='restart_interval' type='I'/>
+<field declared_type='boolean' name='saw_JFIF_marker' type='i'/>
+<field declared_type='UINT8' name='JFIF_major_version' type='C'/>
+<field declared_type='UINT8' name='JFIF_minor_version' type='C'/>
+<field declared_type='UINT8' name='density_unit' type='C'/>
+<field declared_type='UINT16' name='X_density' type='S'/>
+<field declared_type='UINT16' name='Y_density' type='S'/>
+<field declared_type='boolean' name='saw_Adobe_marker' type='i'/>
+<field declared_type='UINT8' name='Adobe_transform' type='C'/>
+<field declared_type='J_COLOR_TRANSFORM' name='color_transform' type='i'/>
+<field declared_type='boolean' name='CCIR601_sampling' type='i'/>
+<field declared_type='jpeg_saved_marker_ptr' name='marker_list' type='^{jpeg_marker_struct=&quot;next&quot;^{jpeg_marker_struct}&quot;marker&quot;C&quot;original_length&quot;I&quot;data_length&quot;I&quot;data&quot;*}'/>
+<field declared_type='int' name='max_h_samp_factor' type='i'/>
+<field declared_type='int' name='max_v_samp_factor' type='i'/>
+<field declared_type='int' name='min_DCT_h_scaled_size' type='i'/>
+<field declared_type='int' name='min_DCT_v_scaled_size' type='i'/>
+<field declared_type='JDIMENSION' name='total_iMCU_rows' type='I'/>
+<field declared_type='JSAMPLE*' name='sample_range_limit' type='*'/>
+<field declared_type='int' name='comps_in_scan' type='i'/>
+<field declared_type='jpeg_component_info**' name='cur_comp_info' type='[4^{?}]'/>
+<field declared_type='JDIMENSION' name='MCUs_per_row' type='I'/>
+<field declared_type='JDIMENSION' name='MCU_rows_in_scan' type='I'/>
+<field declared_type='int' name='blocks_in_MCU' type='i'/>
+<field declared_type='int*' name='MCU_membership' type='[10i]'/>
+<field declared_type='int' name='Ss' type='i'/>
+<field declared_type='int' name='Se' type='i'/>
+<field declared_type='int' name='Ah' type='i'/>
+<field declared_type='int' name='Al' type='i'/>
+<field declared_type='int' name='block_size' type='i'/>
+<field const='true' declared_type='int*' name='natural_order' type='^i'/>
+<field declared_type='int' name='lim_Se' type='i'/>
+<field declared_type='int' name='unread_marker' type='i'/>
+<field declared_type='struct jpeg_decomp_master*' name='master' type='^{jpeg_decomp_master=}'/>
+<field declared_type='struct jpeg_d_main_controller*' name='main' type='^{jpeg_d_main_controller=}'/>
+<field declared_type='struct jpeg_d_coef_controller*' name='coef' type='^{jpeg_d_coef_controller=}'/>
+<field declared_type='struct jpeg_d_post_controller*' name='post' type='^{jpeg_d_post_controller=}'/>
+<field declared_type='struct jpeg_input_controller*' name='inputctl' type='^{jpeg_input_controller=}'/>
+<field declared_type='struct jpeg_marker_reader*' name='marker' type='^{jpeg_marker_reader=}'/>
+<field declared_type='struct jpeg_entropy_decoder*' name='entropy' type='^{jpeg_entropy_decoder=}'/>
+<field declared_type='struct jpeg_inverse_dct*' name='idct' type='^{jpeg_inverse_dct=}'/>
+<field declared_type='struct jpeg_upsampler*' name='upsample' type='^{jpeg_upsampler=}'/>
+<field declared_type='struct jpeg_color_deconverter*' name='cconvert' type='^{jpeg_color_deconverter=}'/>
+<field declared_type='struct jpeg_color_quantizer*' name='cquantize' type='^{jpeg_color_quantizer=}'/>
+</struct>
+<struct name='jpeg_destination_mgr' type='{jpeg_destination_mgr=&quot;next_output_byte&quot;*&quot;free_in_buffer&quot;I&quot;init_destination&quot;^?&quot;empty_output_buffer&quot;^?&quot;term_destination&quot;^?}'>
+<field declared_type='JOCTET*' name='next_output_byte' type='*'/>
+<field declared_type='size_t' name='free_in_buffer' type='L'/>
+<field declared_type='void (*)(j_compress_ptr)' function_pointer='true' name='init_destination' type='^?'>
+<arg declared_type='j_compress_ptr' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='boolean (*)(j_compress_ptr)' function_pointer='true' name='empty_output_buffer' type='^?'>
+<arg declared_type='j_compress_ptr' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='boolean' type='i'/>
+</field>
+<field declared_type='void (*)(j_compress_ptr)' function_pointer='true' name='term_destination' type='^?'>
+<arg declared_type='j_compress_ptr' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</field>
+</struct>
+<struct name='jpeg_error_mgr' type='{jpeg_error_mgr=&quot;error_exit&quot;^?&quot;emit_message&quot;^?&quot;output_message&quot;^?&quot;format_message&quot;^?&quot;reset_error_mgr&quot;^?&quot;msg_code&quot;i&quot;msg_parm&quot;(?=&quot;i&quot;[8i]&quot;s&quot;[80c])&quot;trace_level&quot;i&quot;num_warnings&quot;l&quot;jpeg_message_table&quot;^*&quot;last_jpeg_message&quot;i&quot;addon_message_table&quot;^*&quot;first_addon_message&quot;i&quot;last_addon_message&quot;i}'>
+<field declared_type='noreturn_t (*)(j_common_ptr)' function_pointer='true' name='error_exit' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='noreturn_t' type='v'/>
+</field>
+<field declared_type='void (*)(j_common_ptr, int)' function_pointer='true' name='emit_message' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='void (*)(j_common_ptr)' function_pointer='true' name='output_message' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='void (*)(j_common_ptr, char *)' function_pointer='true' name='format_message' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='char*' type='*'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='void (*)(j_common_ptr)' function_pointer='true' name='reset_error_mgr' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='int' name='msg_code' type='i'/>
+<field declared_type='union jpeg_error_mgr::' name='msg_parm' type='(?=&quot;i&quot;[8i]&quot;s&quot;[80c])'/>
+<field declared_type='int' name='trace_level' type='i'/>
+<field declared_type='long' name='num_warnings' type='l'/>
+<field const='true' declared_type='char **' name='jpeg_message_table' type='^*'/>
+<field declared_type='int' name='last_jpeg_message' type='i'/>
+<field const='true' declared_type='char **' name='addon_message_table' type='^*'/>
+<field declared_type='int' name='first_addon_message' type='i'/>
+<field declared_type='int' name='last_addon_message' type='i'/>
+</struct>
+<struct name='jpeg_marker_struct' type='{jpeg_marker_struct=&quot;next&quot;^{jpeg_marker_struct}&quot;marker&quot;C&quot;original_length&quot;I&quot;data_length&quot;I&quot;data&quot;*}'>
+<field declared_type='jpeg_saved_marker_ptr' name='next' type='^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}'/>
+<field declared_type='UINT8' name='marker' type='C'/>
+<field declared_type='unsigned int' name='original_length' type='I'/>
+<field declared_type='unsigned int' name='data_length' type='I'/>
+<field declared_type='JOCTET*' name='data' type='*'/>
+</struct>
+<struct name='jpeg_memory_mgr' type='{jpeg_memory_mgr=&quot;alloc_small&quot;^?&quot;alloc_large&quot;^?&quot;alloc_sarray&quot;^?&quot;alloc_barray&quot;^?&quot;request_virt_sarray&quot;^?&quot;request_virt_barray&quot;^?&quot;realize_virt_arrays&quot;^?&quot;access_virt_sarray&quot;^?&quot;access_virt_barray&quot;^?&quot;free_pool&quot;^?&quot;self_destruct&quot;^?&quot;max_memory_to_use&quot;l&quot;max_alloc_chunk&quot;l}'>
+<field declared_type='void *(*)(j_common_ptr, int, size_t)' function_pointer='true' name='alloc_small' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='size_t' type='L'/>
+<retval declared_type='void*' type='^v'/>
+</field>
+<field declared_type='void *(*)(j_common_ptr, int, size_t)' function_pointer='true' name='alloc_large' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='size_t' type='L'/>
+<retval declared_type='void*' type='^v'/>
+</field>
+<field declared_type='JSAMPARRAY (*)(j_common_ptr, int, JDIMENSION, JDIMENSION)' function_pointer='true' name='alloc_sarray' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<retval declared_type='JSAMPARRAY' type='^*'/>
+</field>
+<field declared_type='JBLOCKARRAY (*)(j_common_ptr, int, JDIMENSION, JDIMENSION)' function_pointer='true' name='alloc_barray' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<retval declared_type='JBLOCKARRAY' type='^^[64s]'/>
+</field>
+<field declared_type='jvirt_sarray_ptr (*)(j_common_ptr, int, boolean, JDIMENSION, JDIMENSION, JDIMENSION)' function_pointer='true' name='request_virt_sarray' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='boolean' type='i'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<retval declared_type='jvirt_sarray_ptr' type='^{jvirt_sarray_control=}'/>
+</field>
+<field declared_type='jvirt_barray_ptr (*)(j_common_ptr, int, boolean, JDIMENSION, JDIMENSION, JDIMENSION)' function_pointer='true' name='request_virt_barray' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='int' type='i'/>
+<arg declared_type='boolean' type='i'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<retval declared_type='jvirt_barray_ptr' type='^{jvirt_barray_control=}'/>
+</field>
+<field declared_type='void (*)(j_common_ptr)' function_pointer='true' name='realize_virt_arrays' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='JSAMPARRAY (*)(j_common_ptr, jvirt_sarray_ptr, JDIMENSION, JDIMENSION, boolean)' function_pointer='true' name='access_virt_sarray' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='jvirt_sarray_ptr' type='^{jvirt_sarray_control=}'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='boolean' type='i'/>
+<retval declared_type='JSAMPARRAY' type='^*'/>
+</field>
+<field declared_type='JBLOCKARRAY (*)(j_common_ptr, jvirt_barray_ptr, JDIMENSION, JDIMENSION, boolean)' function_pointer='true' name='access_virt_barray' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='jvirt_barray_ptr' type='^{jvirt_barray_control=}'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='JDIMENSION' type='I'/>
+<arg declared_type='boolean' type='i'/>
+<retval declared_type='JBLOCKARRAY' type='^^[64s]'/>
+</field>
+<field declared_type='void (*)(j_common_ptr, int)' function_pointer='true' name='free_pool' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='void (*)(j_common_ptr)' function_pointer='true' name='self_destruct' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='long' name='max_memory_to_use' type='l'/>
+<field declared_type='long' name='max_alloc_chunk' type='l'/>
+</struct>
+<struct name='jpeg_progress_mgr' type='{jpeg_progress_mgr=&quot;progress_monitor&quot;^?&quot;pass_counter&quot;l&quot;pass_limit&quot;l&quot;completed_passes&quot;i&quot;total_passes&quot;i}'>
+<field declared_type='void (*)(j_common_ptr)' function_pointer='true' name='progress_monitor' type='^?'>
+<arg declared_type='j_common_ptr' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='long' name='pass_counter' type='l'/>
+<field declared_type='long' name='pass_limit' type='l'/>
+<field declared_type='int' name='completed_passes' type='i'/>
+<field declared_type='int' name='total_passes' type='i'/>
+</struct>
+<struct name='jpeg_saved_marker_ptr' type='{jpeg_marker_struct=&quot;next&quot;^{jpeg_marker_struct}&quot;marker&quot;C&quot;original_length&quot;I&quot;data_length&quot;I&quot;data&quot;*}'>
+<field declared_type='jpeg_saved_marker_ptr' name='next' type='^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}'/>
+<field declared_type='UINT8' name='marker' type='C'/>
+<field declared_type='unsigned int' name='original_length' type='I'/>
+<field declared_type='unsigned int' name='data_length' type='I'/>
+<field declared_type='JOCTET*' name='data' type='*'/>
+</struct>
+<struct name='jpeg_scan_info' type='{_jpeg_scan_info=&quot;comps_in_scan&quot;i&quot;component_index&quot;[4i]&quot;Ss&quot;i&quot;Se&quot;i&quot;Ah&quot;i&quot;Al&quot;i}'>
+<field declared_type='int' name='comps_in_scan' type='i'/>
+<field declared_type='int*' name='component_index' type='[4i]'/>
+<field declared_type='int' name='Ss' type='i'/>
+<field declared_type='int' name='Se' type='i'/>
+<field declared_type='int' name='Ah' type='i'/>
+<field declared_type='int' name='Al' type='i'/>
+</struct>
+<struct name='jpeg_source_mgr' type='{jpeg_source_mgr=&quot;next_input_byte&quot;*&quot;bytes_in_buffer&quot;I&quot;init_source&quot;^?&quot;fill_input_buffer&quot;^?&quot;skip_input_data&quot;^?&quot;resync_to_restart&quot;^?&quot;term_source&quot;^?}'>
+<field const='true' declared_type='JOCTET*' name='next_input_byte' type='*'/>
+<field declared_type='size_t' name='bytes_in_buffer' type='L'/>
+<field declared_type='void (*)(j_decompress_ptr)' function_pointer='true' name='init_source' type='^?'>
+<arg declared_type='j_decompress_ptr' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='boolean (*)(j_decompress_ptr)' function_pointer='true' name='fill_input_buffer' type='^?'>
+<arg declared_type='j_decompress_ptr' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='boolean' type='i'/>
+</field>
+<field declared_type='void (*)(j_decompress_ptr, long)' function_pointer='true' name='skip_input_data' type='^?'>
+<arg declared_type='j_decompress_ptr' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='long' type='l'/>
+<retval declared_type='void' type='v'/>
+</field>
+<field declared_type='boolean (*)(j_decompress_ptr, int)' function_pointer='true' name='resync_to_restart' type='^?'>
+<arg declared_type='j_decompress_ptr' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='int' type='i'/>
+<retval declared_type='boolean' type='i'/>
+</field>
+<field declared_type='void (*)(j_decompress_ptr)' function_pointer='true' name='term_source' type='^?'>
+<arg declared_type='j_decompress_ptr' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='void' type='v'/>
+</field>
+</struct>
+<opaque name='jvirt_barray_ptr' type='^{jvirt_barray_control=}'/>
+<opaque name='jvirt_sarray_ptr' type='^{jvirt_sarray_control=}'/>
+<enum name='BITS_IN_JSAMPLE' value='8'/>
+<enum name='CENTERJSAMPLE' value='128'/>
+<enum name='C_MAX_BLOCKS_IN_MCU' value='10'/>
+<enum name='DCTSIZE' value='8'/>
+<enum name='DCTSIZE2' value='64'/>
+<enum name='D_MAX_BLOCKS_IN_MCU' value='10'/>
+<enum name='HAVE_LOCALE_H' value='1'/>
+<enum name='HAVE_PROTOTYPES' value='1'/>
+<enum name='HAVE_STDDEF_H' value='1'/>
+<enum name='HAVE_STDLIB_H' value='1'/>
+<enum name='HAVE_UNSIGNED_CHAR' value='1'/>
+<enum name='HAVE_UNSIGNED_SHORT' value='1'/>
+<enum name='JCS_BG_RGB' value='6'/>
+<enum name='JCS_BG_YCC' value='7'/>
+<enum name='JCS_CMYK' value='4'/>
+<enum name='JCS_GRAYSCALE' value='1'/>
+<enum name='JCS_RGB' value='2'/>
+<enum name='JCS_UNKNOWN' value='0'/>
+<enum name='JCS_YCCK' value='5'/>
+<enum name='JCS_YCbCr' value='3'/>
+<enum name='JCT_NONE' value='0'/>
+<enum name='JCT_SUBTRACT_GREEN' value='1'/>
+<enum name='JDCT_DEFAULT' value='0'/>
+<enum name='JDCT_FASTEST' value='1'/>
+<enum name='JDCT_FLOAT' value='2'/>
+<enum name='JDCT_IFAST' value='1'/>
+<enum name='JDCT_ISLOW' value='0'/>
+<enum name='JDITHER_FS' value='2'/>
+<enum name='JDITHER_NONE' value='0'/>
+<enum name='JDITHER_ORDERED' value='1'/>
+<enum name='JERR_BAD_ALIGN_TYPE' value='1'/>
+<enum name='JERR_BAD_ALLOC_CHUNK' value='2'/>
+<enum name='JERR_BAD_BUFFER_MODE' value='3'/>
+<enum name='JERR_BAD_COMPONENT_ID' value='4'/>
+<enum name='JERR_BAD_CROP_SPEC' value='5'/>
+<enum name='JERR_BAD_DCTSIZE' value='7'/>
+<enum name='JERR_BAD_DCT_COEF' value='6'/>
+<enum name='JERR_BAD_DROP_SAMPLING' value='8'/>
+<enum name='JERR_BAD_HUFF_TABLE' value='9'/>
+<enum name='JERR_BAD_IN_COLORSPACE' value='10'/>
+<enum name='JERR_BAD_J_COLORSPACE' value='11'/>
+<enum name='JERR_BAD_LENGTH' value='12'/>
+<enum name='JERR_BAD_LIB_VERSION' value='13'/>
+<enum name='JERR_BAD_MCU_SIZE' value='14'/>
+<enum name='JERR_BAD_POOL_ID' value='15'/>
+<enum name='JERR_BAD_PRECISION' value='16'/>
+<enum name='JERR_BAD_PROGRESSION' value='17'/>
+<enum name='JERR_BAD_PROG_SCRIPT' value='18'/>
+<enum name='JERR_BAD_SAMPLING' value='19'/>
+<enum name='JERR_BAD_SCAN_SCRIPT' value='20'/>
+<enum name='JERR_BAD_STATE' value='21'/>
+<enum name='JERR_BAD_STRUCT_SIZE' value='22'/>
+<enum name='JERR_BAD_VIRTUAL_ACCESS' value='23'/>
+<enum name='JERR_BUFFER_SIZE' value='24'/>
+<enum name='JERR_CANT_SUSPEND' value='25'/>
+<enum name='JERR_CCIR601_NOTIMPL' value='26'/>
+<enum name='JERR_COMPONENT_COUNT' value='27'/>
+<enum name='JERR_CONVERSION_NOTIMPL' value='28'/>
+<enum name='JERR_DAC_INDEX' value='29'/>
+<enum name='JERR_DAC_VALUE' value='30'/>
+<enum name='JERR_DHT_INDEX' value='31'/>
+<enum name='JERR_DQT_INDEX' value='32'/>
+<enum name='JERR_EMPTY_IMAGE' value='33'/>
+<enum name='JERR_EMS_READ' value='34'/>
+<enum name='JERR_EMS_WRITE' value='35'/>
+<enum name='JERR_EOI_EXPECTED' value='36'/>
+<enum name='JERR_FILE_READ' value='37'/>
+<enum name='JERR_FILE_WRITE' value='38'/>
+<enum name='JERR_FRACT_SAMPLE_NOTIMPL' value='39'/>
+<enum name='JERR_HUFF_CLEN_OVERFLOW' value='40'/>
+<enum name='JERR_HUFF_MISSING_CODE' value='41'/>
+<enum name='JERR_IMAGE_TOO_BIG' value='42'/>
+<enum name='JERR_INPUT_EMPTY' value='43'/>
+<enum name='JERR_INPUT_EOF' value='44'/>
+<enum name='JERR_MISMATCHED_QUANT_TABLE' value='45'/>
+<enum name='JERR_MISSING_DATA' value='46'/>
+<enum name='JERR_MODE_CHANGE' value='47'/>
+<enum name='JERR_NOTIMPL' value='48'/>
+<enum name='JERR_NOT_COMPILED' value='49'/>
+<enum name='JERR_NO_ARITH_TABLE' value='50'/>
+<enum name='JERR_NO_BACKING_STORE' value='51'/>
+<enum name='JERR_NO_HUFF_TABLE' value='52'/>
+<enum name='JERR_NO_IMAGE' value='53'/>
+<enum name='JERR_NO_QUANT_TABLE' value='54'/>
+<enum name='JERR_NO_SOI' value='55'/>
+<enum name='JERR_OUT_OF_MEMORY' value='56'/>
+<enum name='JERR_QUANT_COMPONENTS' value='57'/>
+<enum name='JERR_QUANT_FEW_COLORS' value='58'/>
+<enum name='JERR_QUANT_MANY_COLORS' value='59'/>
+<enum name='JERR_SOF_BEFORE' value='60'/>
+<enum name='JERR_SOF_DUPLICATE' value='61'/>
+<enum name='JERR_SOF_NO_SOS' value='62'/>
+<enum name='JERR_SOF_UNSUPPORTED' value='63'/>
+<enum name='JERR_SOI_DUPLICATE' value='64'/>
+<enum name='JERR_TFILE_CREATE' value='65'/>
+<enum name='JERR_TFILE_READ' value='66'/>
+<enum name='JERR_TFILE_SEEK' value='67'/>
+<enum name='JERR_TFILE_WRITE' value='68'/>
+<enum name='JERR_TOO_LITTLE_DATA' value='69'/>
+<enum name='JERR_UNKNOWN_MARKER' value='70'/>
+<enum name='JERR_VIRTUAL_BUG' value='71'/>
+<enum name='JERR_WIDTH_OVERFLOW' value='72'/>
+<enum name='JERR_XMS_READ' value='73'/>
+<enum name='JERR_XMS_WRITE' value='74'/>
+<enum name='JMSG_COPYRIGHT' value='75'/>
+<enum name='JMSG_LASTMSGCODE' value='127'/>
+<enum name='JMSG_LENGTH_MAX' value='200'/>
+<enum name='JMSG_NOMESSAGE' value='0'/>
+<enum name='JMSG_STR_PARM_MAX' value='80'/>
+<enum name='JMSG_VERSION' value='76'/>
+<enum name='JPEG_APP0' value='224'/>
+<enum name='JPEG_COM' value='254'/>
+<enum name='JPEG_EOI' value='217'/>
+<enum name='JPEG_HEADER_OK' value='1'/>
+<enum name='JPEG_HEADER_TABLES_ONLY' value='2'/>
+<enum name='JPEG_LIB_VERSION' value='90'/>
+<enum name='JPEG_LIB_VERSION_MAJOR' value='9'/>
+<enum name='JPEG_LIB_VERSION_MINOR' value='1'/>
+<enum name='JPEG_MAX_DIMENSION' value='65500'/>
+<enum name='JPEG_REACHED_EOI' value='2'/>
+<enum name='JPEG_REACHED_SOS' value='1'/>
+<enum name='JPEG_ROW_COMPLETED' value='3'/>
+<enum name='JPEG_RST0' value='208'/>
+<enum name='JPEG_SCAN_COMPLETED' value='4'/>
+<enum name='JPEG_SUSPENDED' value='0'/>
+<enum name='JPOOL_IMAGE' value='1'/>
+<enum name='JPOOL_NUMPOOLS' value='2'/>
+<enum name='JPOOL_PERMANENT' value='0'/>
+<enum name='JTRC_16BIT_TABLES' value='77'/>
+<enum name='JTRC_ADOBE' value='78'/>
+<enum name='JTRC_APP0' value='79'/>
+<enum name='JTRC_APP14' value='80'/>
+<enum name='JTRC_DAC' value='81'/>
+<enum name='JTRC_DHT' value='82'/>
+<enum name='JTRC_DQT' value='83'/>
+<enum name='JTRC_DRI' value='84'/>
+<enum name='JTRC_EMS_CLOSE' value='85'/>
+<enum name='JTRC_EMS_OPEN' value='86'/>
+<enum name='JTRC_EOI' value='87'/>
+<enum name='JTRC_HUFFBITS' value='88'/>
+<enum name='JTRC_JFIF' value='89'/>
+<enum name='JTRC_JFIF_BADTHUMBNAILSIZE' value='90'/>
+<enum name='JTRC_JFIF_EXTENSION' value='91'/>
+<enum name='JTRC_JFIF_THUMBNAIL' value='92'/>
+<enum name='JTRC_MISC_MARKER' value='93'/>
+<enum name='JTRC_PARMLESS_MARKER' value='94'/>
+<enum name='JTRC_QUANTVALS' value='95'/>
+<enum name='JTRC_QUANT_3_NCOLORS' value='96'/>
+<enum name='JTRC_QUANT_NCOLORS' value='97'/>
+<enum name='JTRC_QUANT_SELECTED' value='98'/>
+<enum name='JTRC_RECOVERY_ACTION' value='99'/>
+<enum name='JTRC_RST' value='100'/>
+<enum name='JTRC_SMOOTH_NOTIMPL' value='101'/>
+<enum name='JTRC_SOF' value='102'/>
+<enum name='JTRC_SOF_COMPONENT' value='103'/>
+<enum name='JTRC_SOI' value='104'/>
+<enum name='JTRC_SOS' value='105'/>
+<enum name='JTRC_SOS_COMPONENT' value='106'/>
+<enum name='JTRC_SOS_PARAMS' value='107'/>
+<enum name='JTRC_TFILE_CLOSE' value='108'/>
+<enum name='JTRC_TFILE_OPEN' value='109'/>
+<enum name='JTRC_THUMB_JPEG' value='110'/>
+<enum name='JTRC_THUMB_PALETTE' value='111'/>
+<enum name='JTRC_THUMB_RGB' value='112'/>
+<enum name='JTRC_UNKNOWN_IDS' value='113'/>
+<enum name='JTRC_XMS_CLOSE' value='114'/>
+<enum name='JTRC_XMS_OPEN' value='115'/>
+<enum name='JWRN_ADOBE_XFORM' value='116'/>
+<enum name='JWRN_ARITH_BAD_CODE' value='117'/>
+<enum name='JWRN_BOGUS_PROGRESSION' value='118'/>
+<enum name='JWRN_EXTRANEOUS_DATA' value='119'/>
+<enum name='JWRN_HIT_MARKER' value='120'/>
+<enum name='JWRN_HUFF_BAD_CODE' value='121'/>
+<enum name='JWRN_JFIF_MAJOR' value='122'/>
+<enum name='JWRN_JPEG_EOF' value='123'/>
+<enum name='JWRN_MUST_RESYNC' value='124'/>
+<enum name='JWRN_NOT_SEQUENTIAL' value='125'/>
+<enum name='JWRN_TOO_MUCH_DATA' value='126'/>
+<enum name='MAXJSAMPLE' value='255'/>
+<enum name='MAX_COMPONENTS' value='10'/>
+<enum name='MAX_COMPS_IN_SCAN' value='4'/>
+<enum name='MAX_SAMP_FACTOR' value='4'/>
+<enum name='NUM_ARITH_TBLS' value='16'/>
+<enum name='NUM_HUFF_TBLS' value='4'/>
+<enum name='NUM_QUANT_TBLS' value='4'/>
+<function name='jpeg_CreateCompress'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='int' name='version' type='i'/>
+<arg declared_type='size_t' name='structsize' type='L'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_CreateDecompress'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='int' name='version' type='i'/>
+<arg declared_type='size_t' name='structsize' type='L'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_abort'>
+<arg declared_type='j_common_ptr' name='cinfo' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_abort_compress'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_abort_decompress'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_add_quant_table'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='int' name='which_tbl' type='i'/>
+<arg const='true' declared_type='unsigned int*' name='basic_table' type='^I'/>
+<arg declared_type='int' name='scale_factor' type='i'/>
+<arg declared_type='boolean' name='force_baseline' type='i'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_alloc_huff_table'>
+<arg declared_type='j_common_ptr' name='cinfo' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='JHUFF_TBL*' type='^{_JHUFF_TBL=[17C][256C]i}'/>
+</function>
+<function name='jpeg_alloc_quant_table'>
+<arg declared_type='j_common_ptr' name='cinfo' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='JQUANT_TBL*' type='^{_JQUANT_TBL=[64S]i}'/>
+</function>
+<function name='jpeg_calc_jpeg_dimensions'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_calc_output_dimensions'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_consume_input'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='jpeg_copy_critical_parameters'>
+<arg declared_type='j_decompress_ptr' name='srcinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='j_compress_ptr' name='dstinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_core_output_dimensions'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_default_colorspace'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_default_qtables'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='boolean' name='force_baseline' type='i'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_destroy'>
+<arg declared_type='j_common_ptr' name='cinfo' type='^{jpeg_common_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_destroy_compress'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_destroy_decompress'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_finish_compress'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_finish_decompress'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='boolean' type='i'/>
+</function>
+<function name='jpeg_finish_output'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='boolean' type='i'/>
+</function>
+<function name='jpeg_has_multiple_scans'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='boolean' type='i'/>
+</function>
+<function name='jpeg_input_complete'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='boolean' type='i'/>
+</function>
+<function name='jpeg_mem_dest'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='unsigned char**' name='outbuffer' type='^*'/>
+<arg declared_type='unsigned long*' name='outsize' type='^L'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_mem_src'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='unsigned char*' name='inbuffer' type='*'/>
+<arg declared_type='unsigned long' name='insize' type='L'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_new_colormap'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_quality_scaling'>
+<arg declared_type='int' name='quality' type='i'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='jpeg_read_coefficients'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='jvirt_barray_ptr*' type='^^{jvirt_barray_control}'/>
+</function>
+<function name='jpeg_read_header'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='boolean' name='require_image' type='i'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='jpeg_read_raw_data'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='JSAMPIMAGE' name='data' type='^^*'/>
+<arg declared_type='JDIMENSION' name='max_lines' type='I'/>
+<retval declared_type='JDIMENSION' type='I'/>
+</function>
+<function name='jpeg_read_scanlines'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='JSAMPARRAY' name='scanlines' type='^*'/>
+<arg declared_type='JDIMENSION' name='max_lines' type='I'/>
+<retval declared_type='JDIMENSION' type='I'/>
+</function>
+<function name='jpeg_resync_to_restart'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='int' name='desired' type='i'/>
+<retval declared_type='boolean' type='i'/>
+</function>
+<function name='jpeg_save_markers'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='int' name='marker_code' type='i'/>
+<arg declared_type='unsigned int' name='length_limit' type='I'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_set_colorspace'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='J_COLOR_SPACE' name='colorspace' type='i'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_set_defaults'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_set_linear_quality'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='int' name='scale_factor' type='i'/>
+<arg declared_type='boolean' name='force_baseline' type='i'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_set_marker_processor'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='int' name='marker_code' type='i'/>
+<arg declared_type='jpeg_marker_parser_method' function_pointer='true' name='routine' type='^?'>
+<arg declared_type='j_decompress_ptr' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='boolean' type='i'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_set_quality'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='int' name='quality' type='i'/>
+<arg declared_type='boolean' name='force_baseline' type='i'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_simple_progression'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_start_compress'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='boolean' name='write_all_tables' type='i'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_start_decompress'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<retval declared_type='boolean' type='i'/>
+</function>
+<function name='jpeg_start_output'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='int' name='scan_number' type='i'/>
+<retval declared_type='boolean' type='i'/>
+</function>
+<function name='jpeg_std_error'>
+<arg declared_type='struct jpeg_error_mgr*' name='err' type='^{jpeg_error_mgr=^?^?^?^?^?i(?=[8i][80c])il^*i^*ii}'/>
+<retval declared_type='struct jpeg_error_mgr*' type='^{jpeg_error_mgr=^?^?^?^?^?i(?=[8i][80c])il^*i^*ii}'/>
+</function>
+<function name='jpeg_stdio_dest'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='FILE*' name='outfile' type='^{__sFILE=*iiss{__sbuf=*i}i^v^?^?^?^?{__sbuf=*i}^{__sFILEX}i[3C][1C]{__sbuf=*i}iq}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_stdio_src'>
+<arg declared_type='j_decompress_ptr' name='cinfo' type='^{jpeg_decompress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_source_mgr}IIiiiIIdiiiiiiiiiiiiIIiiii^*IiIiI^[64i][4^{?}][4^{?}][4^{?}]i^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}iii[16C][16C][16C]IiCCCSSiCii^{jpeg_marker_struct=^{jpeg_marker_struct}CII*}iiiiI*i[4^{?}]IIi[10i]iiiii^iii^{jpeg_decomp_master}^{jpeg_d_main_controller}^{jpeg_d_coef_controller}^{jpeg_d_post_controller}^{jpeg_input_controller}^{jpeg_marker_reader}^{jpeg_entropy_decoder}^{jpeg_inverse_dct}^{jpeg_upsampler}^{jpeg_color_deconverter}^{jpeg_color_quantizer}}'/>
+<arg declared_type='FILE*' name='infile' type='^{__sFILE=*iiss{__sbuf=*i}i^v^?^?^?^?{__sbuf=*i}^{__sFILEX}i[3C][1C]{__sbuf=*i}iq}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_suppress_tables'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='boolean' name='suppress' type='i'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_write_coefficients'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='jvirt_barray_ptr*' name='coef_arrays' type='^^{jvirt_barray_control}'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_write_m_byte'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='int' name='val' type='i'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_write_m_header'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='int' name='marker' type='i'/>
+<arg declared_type='unsigned int' name='datalen' type='I'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_write_marker'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='int' name='marker' type='i'/>
+<arg const='true' declared_type='JOCTET*' name='dataptr' type='*'/>
+<arg declared_type='unsigned int' name='datalen' type='I'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='jpeg_write_raw_data'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='JSAMPIMAGE' name='data' type='^^*'/>
+<arg declared_type='JDIMENSION' name='num_lines' type='I'/>
+<retval declared_type='JDIMENSION' type='I'/>
+</function>
+<function name='jpeg_write_scanlines'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<arg declared_type='JSAMPARRAY' name='scanlines' type='^*'/>
+<arg declared_type='JDIMENSION' name='num_lines' type='I'/>
+<retval declared_type='JDIMENSION' type='I'/>
+</function>
+<function name='jpeg_write_tables'>
+<arg declared_type='j_compress_ptr' name='cinfo' type='^{jpeg_compress_struct=^{jpeg_error_mgr}^{jpeg_memory_mgr}^{jpeg_progress_mgr}^vii^{jpeg_destination_mgr}IIiidIIIIiii^{_jpeg_component_info=iiiiiiiIIiiIIiiiiiii^{_JQUANT_TBL=[64S]i}^v}[4^{?}][4i][4^{?}][4^{?}][16C][16C][16C]i^{_jpeg_scan_info=i[4i]iiii}iiiiiiiIiiCCCSSiiIiiiiiIi[4^{?}]IIi[10i]iiiii^ii^{jpeg_comp_master}^{jpeg_c_main_controller}^{jpeg_c_prep_controller}^{jpeg_c_coef_controller}^{jpeg_marker_writer}^{jpeg_color_converter}^{jpeg_downsampler}^{jpeg_forward_dct}^{jpeg_entropy_encoder}^{_jpeg_scan_info=i[4i]iiii}i}'/>
+<retval declared_type='void' type='v'/>
+</function>
+</signatures>
